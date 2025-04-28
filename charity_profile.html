@@ -1,0 +1,79 @@
+<!-- charity_profile.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>City Food Bank Profile</title>
+ <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <!-- Same navigation as index.html -->
+    </header>
+
+    <main>
+        <!-- Add this form section ABOVE existing volunteer button -->
+        <section id="volunteer-form" style="display: none;">
+          <h3>Volunteer Signup</h3>
+          <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" required>
+        
+            <label for="email">Email:</label>
+            <input type="email" id="email" required>
+        
+            <button type="submit">Submit</button>
+          </form>
+        </section>
+        
+        <!-- Add counter display -->
+        <p id="volunteer-counter">0 volunteers joined recently!</p>
+        
+        <!-- Link JS at BOTTOM of body -->
+        <script src="charity_profile.js"></script>
+        <section class="charity-header">
+            <img src="food-bank-banner.jpg" alt="Food Bank warehouse">
+            <h1>City Food Bank</h1>
+            <div class="badges">
+                <span class="rating">4.8 ★</span>
+                <span class="volunteers">500+ volunteers</span>
+            </div>
+        </section>
+
+        <section class="charity-details">
+            <div class="location">
+                <h2>Location</h2>
+                <address>1 W Firestorm Way<br>Glendale, AZ 85301</address>
+            </div>
+
+            <div class="opportunities">
+                <h2>Volunteer Opportunities</h2>
+                <ul>
+                    <li>
+                        <h3>Food Sorting</h3>
+                        <p>Weekday mornings</p>
+                        <button>Sign Up</button>
+                    </li>
+                    <!-- More opportunities -->
+                </ul>
+            </div>
+
+            <section class="volunteer-form">
+                <h2>Volunteer Inquiry</h2>
+                <form>
+                    <label for="name">Full Name:</label>
+                    <input type="text" id="name" required>
+                    
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" required>
+                    
+                    <label for="availability">Availability:</label>
+                    <textarea id="availability"></textarea>
+                    
+                    <button type="submit">Submit Application</button>
+                </form>
+            </section>
+        </section>
+    </main>
+</body>
+</html>

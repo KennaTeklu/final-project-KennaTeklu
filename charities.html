@@ -1,0 +1,55 @@
+<!-- charities.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Browse Charities - CharitywithKennaTeklu</title>
+
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+    <header>
+        <!-- Same navigation as index.html -->
+    </header>
+
+    <main>
+        <h1>Local Charities</h1>
+        
+        <section class="filters">
+            <h2>Filter By:</h2>
+            <form>
+                <select>
+                    <option>Category</option>
+                    <option>Food Banks</option>
+                    <option>Animal Shelters</option>
+                </select>
+                <input type="number" placeholder="Max distance (miles)">
+            </form>
+        </section>
+
+        <section class="charity-list">
+            <article class="charity-card">
+                <img src="logo.jpg" alt="Food Bank Logo" class="charity-logo">
+                <div class="charity-info">
+                    <h2><a href="charity_profile.html">City Food Bank</a></h2>
+                    <div class="badges">
+                        <span class="category-tag">Hunger Relief</span>
+                        <span class="distance-badge">2 miles away</span>
+                    </div>
+                    <p class="mission-statement">Fighting hunger through community partnerships...</p>
+                    <button class="volunteer-cta">View Opportunities</button>
+                </div>
+            </article>
+            
+            <!-- More charity cards -->
+        </section>
+
+        <div class="pagination">
+            <button aria-label="Previous page">&lt;</button>
+            <span>Page 1 of 5</span>
+            <button aria-label="Next page">&gt;</button>
+        </div>
+    </main>
+</body>
+</html>
